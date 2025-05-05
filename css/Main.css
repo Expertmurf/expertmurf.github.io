@@ -1,0 +1,144 @@
+*{ -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+    background-color: #F1F2EB;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: justify;
+}
+
+.Header {
+    text-align: center;
+}
+
+.Header img {
+    width: clamp(100px, 50%, 500px);
+    height: auto;
+    cursor: pointer;
+}
+
+.Links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Links h2 {
+    margin: 0;
+}
+
+#About {
+    cursor:pointer;
+}
+
+.artist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist p {
+    margin-right: 50px;
+}
+
+.artist img {
+    display: block;
+    margin: auto;
+    width: clamp(1px, 50%, 250px);
+    height: auto;
+    outline: auto;
+}
+
+@media (max-width: 950px) {
+    .artist {
+        flex-direction: column;
+    }
+    .artist img {
+        margin-top: 2rem;
+    }
+}
+
+#Socials {
+    text-decoration: line-through;
+}
+
+#Portfolio {
+    cursor:pointer;
+}
+
+#gd {
+    background-color:rgb(219, 255, 212);
+    outline:auto;
+}
+
+#cc {
+    background-color:rgb(180, 244, 255);
+    outline:auto;
+}
+
+#vp {
+    background-color:rgb(252, 220, 255);
+    outline:auto;
+}
+
+#wd {
+    background-color:rgb(254, 255, 204);
+    outline:auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-left {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-right img {
+    display: block;
+    margin: auto;
+    width: clamp(100px, 100%, 700px);
+    height: auto;
+}
+
+@media (max-width: 1450px) {
+    .project-right {
+        flex-direction: column;
+    }
+    .project-right img {
+        margin-bottom: 2rem;
+    }
+}
+
+
+#Music {
+    text-decoration: line-through;
+}
+
+#Random {
+    text-decoration: line-through;
+}
+
+#Content {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
